@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style type="text/css">
+      .my-content-container {
+        width: 300px;
+        margin: 0 auto;
+        height: 150px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .my-content {
+        line-height: 2em;
+      }
+
+      .view-more-container {
+        bottom: 0;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="my-content-container" class="my-content-container">
+      <p class="my-content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.
+      </p>
+      <div class="view-more-container">
+        <a href="#" id="view-more">View more</a>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    var viewMoreLink = document.getElementById('view-more');
+    viewMoreLink.addEventListener('click', function() {
+      var myContentContainer = document.getElementById('my-content-container');
+      myContentContainer.style.height = 'auto';
+    });
+  </script>
+</html>
